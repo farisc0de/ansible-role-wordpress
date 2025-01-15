@@ -1,7 +1,7 @@
 ---
-wp_base_path: "{{ wp_base_path }}"
-wp_deploy_user: "{{ wp_deploy_user }}"
-wp_deploy_group: "{{ wp_deploy_group }}"
+wp_base_path: "{{ base_path }}"
+wp_deploy_user: "{{ deploy_user }}"
+wp_deploy_group: "{{ deploy_group }}"
 
 # Prompt-based variables for database credentials
 wp_db_name: "{{ db_name }}"
