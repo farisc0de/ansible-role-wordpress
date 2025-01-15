@@ -1,7 +1,7 @@
 ---
-wp_base_path: "/var/www/wordpress"
-wp_deploy_user: "www-data"
-wp_deploy_group: "www-data"
+wp_base_path: "{{ wp_base_path }}"
+wp_deploy_user: "{{ wp_deploy_user }}"
+wp_deploy_group: "{{ wp_deploy_group }}"
 
 # Prompt-based variables for database credentials
 wp_db_name: "{{ db_name }}"
@@ -16,4 +16,4 @@ wp_debug: false
 wp_cleanup_tmp: true
 wp_rollback: false
 
-wp_domain: "domain.com"
+wp_domain: "{{ wp_domain }}"
